@@ -1,0 +1,39 @@
+@import "/node_modules/rc-slider/assets/index.css";
+
+.rc-slider {
+    width: calc(100% - 50px);
+    margin: 0 auto;
+}
+
+.rc-slider-rail {
+    background-color: white;
+    height: 5px;
+    border-radius: 0;
+}
+
+.rc-slider-track {
+    height: 0;
+    border-radius: 0;
+    background-color: transparent;
+}
+
+.rc-slider-dot {
+    width: 0;
+    height: 0;
+    border: none;
+}
+.rc-slider-dot-active {
+    border: none;
+}
+
+.rc-slider-handle {
+    width: 15px;
+    height: 15px;
+    border: none;
+    background-color: white;
+}
+
+.rc-slider-mark-text {
+    color: white;
+    white-space: nowrap;
+}

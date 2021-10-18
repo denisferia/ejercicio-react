@@ -1,8 +1,8 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+  font-size: 16px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -10,4 +10,106 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.App {
+  background-color: #084f85;
+  padding: 65px 0;
+}
+
+.simulator {
+  width: 100%;
+  max-width: 590px;
+  margin: 0 auto;
+  background: linear-gradient(0deg, rgba(2,0,36,0) 0%, rgba(0,59,101,1) 30%, rgba(0,59,101,1) 100%);
+  padding: 40px 45px;
+}
+
+h2 {
+  margin: 0 0 55px;
+}
+
+.total-amnt,
+.installment-amnt {
+  margin: 0 12px 35px;
+}
+
+section.input {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+label {
+  text-transform: uppercase;
+  font-size: 0.8em;
+}
+
+input {
+  appearance: none;
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+  text-align: center;
+  padding: 6px;
+  width: 145px;
+}
+
+input:focus {
+  box-shadow: none;
+  outline: none;
+}
+
+.monthly-rate{
+  background-color: #00355d;
+  display: flex;
+  padding: 10px 30px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.monthly-rate h2{
+  margin: 0;
+  font-size: 0.75em;
+  text-transform: uppercase;
+}
+
+.monthly-rate h3{
+  margin: 0;
+  font-size: 1.5em;
+}
+
+.monthly-rate h3:before{
+  content: "$ "
+}
+
+.button-pad {
+  display: flex;
+}
+
+.button-pad button{
+  border: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 57px;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.button-pad button.primary{
+  background-color: #17aa8d;
+  font-size: 1.1em;
+  margin-right: 10px;
+  flex-grow: 1;
+}
+
+.button-pad button.secondary{
+  background-color: #0b548b;
+  font-size: 0.7em;
 }
